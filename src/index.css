@@ -1,13 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Press Start 2P', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.game-listing-container {
+  width: 55vw;
+}
+
+.game-heading-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.game-heading {
+  color: #f77ecf;
+  font-size: 3vw;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.game-sub-heading {
+  color: #fff;
+  font-size: 1.7vw;
+  margin-left: 2vw;
+}
+
+.singlegame-title {
+  color: #fff;
+  font-size: 1vw;
+}
+
+.singlegame-title.selected {
+  color: #f77ecf;
+  font-size: 1vw;
+}
+
+#running_game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+iframe {
+  display: none;
 }
